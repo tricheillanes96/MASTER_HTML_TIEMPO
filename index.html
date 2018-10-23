@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>El tiempo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="custom.css"/>
+        <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div>UBICACION ACTUAL</div>
+        <div style="width: 100%;height: 500px;overflow: hidden;min-width: 700px;">    
+        <iframe id="ubicacion_actual" src="https://www.meteoblue.com/es/tiempo/widget/three?geoloc=detect&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts"  ></iframe>
+        </div>
+ 
+        <div>UBICACION DIFERENTE</div>
+        <select onchange="myFunction()" id="selector_ciudad" size="3">
+            <option value="a-coruña_españa_3119841">A coruña</option>
+            <option value="alava_españa_3130718">Alava</option>
+            <option value="albacete_españa_2522258">Albacete</option>
+            <option value="alicante_españa_2521978">Alicante</option>
+            <option value="almería_españa_2521886">Almeria</option>
+            <option value="andorra_españa_3130067">Andorra</option>
+            <option value="Ávila_españa_3129136">Avila</option>
+
+            <option value="badajoz_españa_2521420">Badajoz</option>
+            <option value="barcelona_españa_3128760">Barcelona</option>
+            <option value="bilbao_españa_3128026">Bilbao</option>
+			<option value="burgos_españa_3127461">Burgos</option>
+
+            <option value="cáceres_españa_2520611">Caceres</option>
+			<option value="cadiz_españa_2520600">Cadiz</option>
+			<option value="castelló-de-la-plana_españa_2519752">Castellon</option>
+			<option value="ceuta_españa_6362987">Ceuta</option>
+			<option value="ciudad-real_españa_2519402">Ciudad Real</option>
+			<option value="córdoba_españa_2519240">Cordoba</option>
+			<option value="cuenca_españa_3124132">Cuenca</option>
+
+			<option value="formentera_españa_2517690">Formentera</option>
+
+			<option value="gijón_españa_3121424">Gijón</option>
+			<option value="girona_españa_3121456">Girona</option>
+			<option value="granada_españa_2517117">Granada</option>
+			<option value="guadalajara_españa_3121070">Guadalajara</option>
+
+			<option value="huelva_españa_2516548">Huelva</option>
+			<option value="huesca_españa_3120514">Huesca</option>
+
+			<option value="ibiza_españa_2516479">Ibiza</option>
+
+			<option value="jaén_españa_2516395">Jaen</option>
+
+			<option value="las-palmas-de-gran-canaria_españa_2515270">Las Palmas de Gran Canaria</option>
+			<option value="lleida_españa_3118514">Lleida</option>
+			<option value="león_españa_3118532">Leon</option>
+			<option value="logroño_españa_3118150">Logroño</option>
+			<option value="lugo_españa_3117814">Lugo</option>
+
+			<option value="madrid_españa_3117735">Madrid</option>
+            <option value="málaga_españa_2514256">Malaga</option>
+            <option value="mallorca_españa_2514239">Mallorca</option>
+            <option value="melilla_españa_2513947">Melilla</option>
+            <option value="menorca_españa_2513925">Menorca</option>
+            <option value="murcia_españa_2513416">Murcia</option>
+            
+            <option value="ourense_españa_3114965">Ourense</option>
+            <option value="oviedo_españa_3114711">Oviedo</option>
+            
+            <option value="palencia_españa_3114531">Palencia</option>
+            <option value="pamplona_españa_3114472">Pamplona</option>
+            <option value="pontevedra_españa_3113209">Pontevedra</option>
+           
+            <option value="salamanca_españa_3111108">Salamanca</option>
+            <option value="donostia-%2f-san-sebastián_españa_3110044">San Sebastian</option>
+            <option value="santa-cruz-de-tenerife_españa_2511174">Santa Cruz de Tenerife</option>
+            <option value="santander_españa_3109718">Santander</option>
+            <option value="segovia_españa_3109256">Segovia</option>
+            <option value="sevilla_españa_2510911">Sevilla</option>
+            <option value="soria_españa_3108681">Soria</option>
+            
+            <option value="tarragona_españa_3108288">Tarragona</option>
+            <option value="teruel_españa_3108126">Teruel</option>
+            <option value="toledo_españa_2510409">Toledo</option>
+
+            <option value="valencia_españa_2509954">Valencia</option>
+            <option value="valladolid_españa_3106672">Valladolid</option>
+            <option value="gasteiz-%2f-vitoria_españa_3104499">Vitoria</option>
+            
+            <option value="zamora_españa_3104342">Zamora</option>
+            <option value="zaragoza_españa_3104324">Zaragoza</option>
+    	           
+        </select>
+    
+        <div style="width: 100%;height: 500px;overflow: hidden;min-width: 700px;">    
+            <iframe id="ubicacion_seleccionada" src="https://www.meteoblue.com/es/tiempo/pronostico/semana/m%C3%A1laga_espa%C3%B1a_2514256?utm_source=weather_widget&utm_medium=linkus&utm_content=three&utm_campaign=Weather%2BWidget" frameborder="0" scrolling="NO" allowtransparency="true"  sandbox="allow-same-origin allow-scripts"></iframe>
+        </div>
+    
+        
+        
+        
+        <script type="text/javascript">
+        window.onload = myFunction()
+        function myFunction() {
+            var lista_ciudades = document.getElementById("selector_ciudad");
+            var ciudad_seleccionada = lista_ciudades.options[lista_ciudades.selectedIndex].value;
+            document.getElementById("ubicacion_seleccionada").src="https://www.meteoblue.com/es/tiempo/widget/three/"+ciudad_seleccionada+"?geoloc=fixed&nocurrent=0&noforecast=0&days=2&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image";         
+        }             
+        </script>
+        </body>
+</html>
