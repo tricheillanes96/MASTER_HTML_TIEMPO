@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Grayscale - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+	
+	<!-- Custom styles MASTER INFTEL -->
+    <link href="css/custom_masterinfel.css" rel="stylesheet">
+	
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">TU TIEMPO</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#ubiActual">Tu ubicación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#buscaCiudad">Otras ciudades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#alu">¿Quiénes somos?</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="index_en.html">English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Cabecera Inicial -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">TU TIEMPO</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">Sin complicaciones, actualizado para ti.</h2>
+          <a href="#ubiActual" class="btn btn-primary js-scroll-trigger">Consultar Ahora</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Ubicacion Actual -->
+    <section id="ubiActual" class="ubi_actual-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">TU UBICACIÓN ACTUAL</h2>
+            <p class="text-white-50">Previsión meteorológica en tu ubicación
+          </div>
+          <div class="iframe">    
+            <iframe id="ubicacion_actual" src="https://www.meteoblue.com/es/tiempo/widget/three?geoloc=detect&nocurrent=0&noforecast=0&days=4&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image" frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts"></iframe>
+	  </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Ubicación Personalizada -->
+    <section id="buscaCiudad" class="ubi_personalizada-section text-center bg-light">   
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">BUSCAR OTRA UBICACIÓN</h2>
+            <p class="text-white">Consulte la previsión meteorológica de otra ciudad</P>
+          </div>
+            <select id="selector_ciudad" size="3" class="form-control" >           
+            </select>
+           <div id="ubic_personalizada" class="iframe_closed">   
+            <iframe id="ubicacion_seleccionada" frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts"></iframe>
+           </div>		  
+        </div>
+      </div> 
+    </section>
+
+
+    <!-- Alumnos Sección -->
+    <section id="alu" class="alu-section bg-black">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <br>
+                <h2 class="text-white mb-5">¿Quiénes somos?</h2>
+              </div>
+          </div>
+
+
+        <div class="row">
+          <div class="col-md-3 mb-2 mb-md-0">
+            <div class="card py-4 h-70">
+              <div class="card-body text-center">
+                <i class="fas fa-user text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Gonzalo</h4>
+                <h4 class="text-uppercase m-0">Chica</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">Graduado en</div>
+                <div class="small text-black-50">Ing. Informática</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-2 mb-md-0">
+            <div class="card py-4 h-70">
+              <div class="card-body text-center">
+                <i class="fas fa-user text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Loubna</h4>
+                <h4 class="text-uppercase m-0">Errahaimi</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">Graduada en</div>
+                <div class="small text-black-50">Ing. Telecomunicaciones</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-2 mb-md-0">
+            <div class="card py-4 h-70">
+              <div class="card-body text-center">
+                <i class="fas fa-user text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Beatriz</h4>
+                <h4 class="text-uppercase m-0">Illanes</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">Graduada en</div>
+                <div class="small text-black-50">Ing. Informática</div>
+              </div>
+            </div>
+          </div>
+            
+          <div class="col-md-3 mb-2 mb-md-0">
+            <div class="card py-4 h-70">
+              <div class="card-body text-center">
+                <i class="fas fa-user text-primary mb-2"></i>
+                <h4 class="text-uppercase m-0">Antonio</h4>
+                <h4 class="text-uppercase m-0">Recio</h4>
+                <hr class="my-4">
+                <div class="small text-black-50">Graduado en</div>
+                <div class="small text-black-50">Ing. Industrial</div>
+              </div>               
+            </div>
+         </div>
+      </div>
+      
+</section>
+    
+        
+    
+
+    <!-- Footer -->
+    <footer class="bg-black small text-center text-white-50">
+      <h1 class="mx-auto my-0 text-uppercase">MASTER INFTEL</h1>
+      <h2 class="text-white-50 mx-auto mt-2 mb-5">2018</h2>
+      <br><br>
+      <div class="container">
+        Copyright &copy; Master Inftel 2018
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+    
+    <!-- NUESTRO SCRIPT -->
+    <script type="text/javascript">
+        var data_json = $.get("datos.json", function(data) {
+        	var IDcity = data.city_ID;
+        	var nombre = data.city_NAME;
+        	for(var i=0; i<=IDcity.length; i++)
+        	{
+                    $("#selector_ciudad").append("<option value=\"" + IDcity[i] + "\">"+ nombre[i] + "</option>");	
+        	}
+        	
+        });
+        $("#selector_ciudad").change(cambiarCiudadTiempo);
+        function cambiarCiudadTiempo() {
+            $("#ubic_personalizada").removeClass("iframe_closed").addClass("iframe");
+            var ciudad_seleccionada = $("#selector_ciudad").val();
+            $("#ubicacion_seleccionada").attr("src", "https://www.meteoblue.com/es/tiempo/widget/three/"+ciudad_seleccionada+"?geoloc=fixed&nocurrent=0&noforecast=0&days=2&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image");         
+        }  
+        </script>
+
+  </body>
+
+</html>

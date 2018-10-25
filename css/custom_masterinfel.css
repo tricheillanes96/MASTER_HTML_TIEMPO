@@ -1,0 +1,101 @@
+/*!
+ * MASTER INFTEL custom CSS.
+ * Extended CSS for the new parts of the template and the extension of the project.
+ * Creators: G.Chica, L. Errahaimi, B.Illanes, A.Recio
+ */
+
+@media only screen and (max-width: 870px) {
+    iframe{
+        width: 100%;height: 530px;margin: -50px 0 0 0;
+    }
+}
+@media only screen and (min-width: 871px) {
+    iframe{
+        width: 100%;height: 535px;margin: -60px 0 0 0;
+    }
+}
+@media only screen and (min-width: 1360px) {
+    iframe{
+        width: 100%;height: 540px;margin: -70px 0 0 0;
+    }
+}
+.iframe{
+    min-width: 700px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.iframe_closed{
+    min-width: 700px;
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+}
+#selector_ciudad{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.ubi_actual-section {
+  padding-top: 10rem;
+  padding-bottom: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#161616), color-stop(75%, rgba(22, 22, 22, 0.9)), to(rgba(22, 22, 22, 0.8)));
+  background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
+}
+
+.ubi_actual-section p {
+  margin-bottom: 5rem;
+}
+.ubi_personalizada-section {
+  padding: 10rem 10rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/bg-signup.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.ubi_personalizada-section .form-inline input {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.buscaCiudad-section {
+  padding: 10rem 0;
+}
+
+.buscaCiudad-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .buscaCiudad-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+.buscaCiudad-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .buscaCiudad-section .project-text {
+    padding: 5rem;
+  }
+  .buscaCiudad-section .project-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
+}

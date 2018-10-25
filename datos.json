@@ -1,0 +1,21 @@
+{
+    "city_ID":["a-coruña_españa_3119841","alava_españa_3130718","albacete_españa_2522258","alicante_españa_2521978",
+        "almería_españa_2521886","andorra_españa_3130067","Ávila_españa_3129136","badajoz_españa_2521420","barcelona_españa_3128760",
+        "bilbao_españa_3128026","burgos_españa_3127461","cáceres_españa_2520611","cadiz_españa_2520600","castelló-de-la-plana_españa_2519752",
+        "ceuta_españa_6362987","ciudad-real_españa_2519402","córdoba_españa_2519240","cuenca_españa_3124132","formentera_españa_2517690",
+        "gijón_españa_3121424","girona_españa_3121456","granada_españa_2517117","guadalajara_españa_3121070","huelva_españa_2516548",
+        "huesca_españa_3120514","ibiza_españa_2516479","jaén_españa_2516395","las-palmas-de-gran-canaria_españa_2515270","lleida_españa_3118514",
+        "león_españa_3118532","logroño_españa_3118150","lugo_españa_3117814","mallorca_españa_2514239","melilla_españa_2513947",
+        "menorca_españa_2513925","murcia_españa_2513416","ourense_españa_3114965","oviedo_españa_3114711","palencia_españa_3114531",
+        "pamplona_españa_3114472","pontevedra_españa_3113209","salamanca_españa_3111108","donostia-%2f-san-sebastián_españa_3110044",
+        "santa-cruz-de-tenerife_españa_2511174","santander_españa_3109718","segovia_españa_3109256","sevilla_españa_2510911","soria_españa_3108681",
+        "tarragona_españa_3108288","teruel_españa_3108126","toledo_españa_2510409","valencia_españa_2509954","valladolid_españa_3106672",
+        "gasteiz-%2f-vitoria_españa_3104499","zamora_españa_3104342","zaragoza_españa_3104324"],
+
+    "city_NAME": ["A coruña","Alava","Albacete","Alicante","Almeria","Andorra","Avila","Badajoz","Barcelona","Bilbao","Burgos","Caceres",
+        "Cadiz","Castellon","Ceuta","Ciudad Real","Cordoba","Cuenca","Formentera","Gijón","Girona","Granada","Guadalajara","Huelva","Huesca",
+        "Ibiza","Jaen","Las Palmas de Gran Canaria","Lleida","Leon","Logroño","Lugo","Mallorca","Melilla","Menorca","Murcia","Ourense",
+        "Oviedo","Palencia","Pamplona","Pontevedra","Salamanca","San Sebastian","Santa Cruz de Tenerife","Santander","Segovia","Sevilla",
+        "Soria","Tarragona","Teruel","Toledo","Valencia","Valladolid","Vitoria","Zamora","Zaragoza"]
+
+}
