@@ -1,8 +1,9 @@
-[MASTER INFTEL - PROJECT 1 - TU TIEMPO]
-This template has been modified by four master's students in the University of Malaga, Spain.
+## [MASTER INFTEL - TU TIEMPO]
+This template has been modified by four students in the MASTER INFTEL (University of Malaga, Spain).
+
 G.Chica, L. Errahaimi, B.Illanes, A.Recio
 
-
+________________________________________________________________________________________________________
 
 
 # [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/)
