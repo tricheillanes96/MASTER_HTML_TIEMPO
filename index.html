@@ -111,59 +111,21 @@
           </div>
 
 
-        <div class="row">
-          <div class="col-md-3 mb-2 mb-md-0">
-            <div class="card py-4 h-70">
-              <div class="card-body text-center">
-                <i class="fas fa-user text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Gonzalo</h4>
-                <h4 class="text-uppercase m-0">Chica</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">Graduado en</div>
-                <div class="small text-black-50">Ing. Informática</div>
-              </div>
-            </div>
-          </div>
+        <div class="row" id="alumno"></div>
 
-          <div class="col-md-3 mb-2 mb-md-0">
-            <div class="card py-4 h-70">
-              <div class="card-body text-center">
-                <i class="fas fa-user text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Loubna</h4>
-                <h4 class="text-uppercase m-0">Errahaimi</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">Graduada en</div>
-                <div class="small text-black-50">Ing. Telecomunicaciones</div>
-              </div>
-            </div>
-          </div>
+        <div class="col-md-10 col-lg-8 mx-auto text-center contact">
 
-          <div class="col-md-3 mb-2 mb-md-0">
-            <div class="card py-4 h-70">
-              <div class="card-body text-center">
-                <i class="fas fa-user text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Beatriz</h4>
-                <h4 class="text-uppercase m-0">Illanes</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">Graduada en</div>
-                <div class="small text-black-50">Ing. Informática</div>
-              </div>
-            </div>
+            <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+            <h2 class="text-white mb-5">¿Tiene alguna duda? Contacta con nosotros!</h2>
+
+            <form class="form-inline d-flex" action="mailto:gonzalochica@uma.es">
+              <input type="submit" class="btn btn-primary mx-auto" value="Contacta con el equipo de 'TU TIEMPO'">
+            </form>
+
           </div>
-            
-          <div class="col-md-3 mb-2 mb-md-0">
-            <div class="card py-4 h-70">
-              <div class="card-body text-center">
-                <i class="fas fa-user text-primary mb-2"></i>
-                <h4 class="text-uppercase m-0">Antonio</h4>
-                <h4 class="text-uppercase m-0">Recio</h4>
-                <hr class="my-4">
-                <div class="small text-black-50">Graduado en</div>
-                <div class="small text-black-50">Ing. Industrial</div>
-              </div>               
-            </div>
-         </div>
       </div>
+
+          
       
 </section>
     
@@ -201,6 +163,28 @@
         	}
         	
         });
+
+        var contributors_json = $.get("datos.json", function(data_1) {
+            var nombre = data_1.Nombre;
+            var apelli = data_1.Apellidos;
+            var grado = data_1.Grade;
+            var titulo = data_1.Titulo;
+            for(var i=0; i<nombre.length; i++){
+                $("#alumno").append("<div class=\"col-md-3 mb-2 mb-md-0\">"
+                                     +"<div class=\"card py-4 h-70\">"
+                                     +"<div class=\"card-body text-center\">"
+                                     +"<i class=\"fas fa-user text-primary mb-2\"></i>"
+                                     +"<h4 class=\"text-uppercase m-0\">" + nombre[i] + "</h4>"
+                                     +"<h4 class=\"text-uppercase m-0\">" + apelli[i] + "</h4>"
+                                     +"<hr class=\"my-4\">"
+                                     +"<div class=\"small text-black-50\">" + grado[i] + "</div>"
+                                     +"<div class=\"small text-black-50\">" + titulo[i] + "</div>"
+                                     +"</div>"
+                                     +"</div>"
+                                     +"</div>");
+           }  
+          });
+
         $("#selector_ciudad").change(cambiarCiudadTiempo);
         function cambiarCiudadTiempo() {
             $("#ubic_personalizada").removeClass("iframe_closed").addClass("iframe");

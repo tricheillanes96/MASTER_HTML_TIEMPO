@@ -16,6 +16,11 @@
         "Cadiz","Castellon","Ceuta","Ciudad Real","Cordoba","Cuenca","Formentera","Gijón","Girona","Granada","Guadalajara","Huelva","Huesca",
         "Ibiza","Jaen","Las Palmas de Gran Canaria","Lleida","Leon","Logroño","Lugo","Mallorca","Melilla","Menorca","Murcia","Ourense",
         "Oviedo","Palencia","Pamplona","Pontevedra","Salamanca","San Sebastian","Santa Cruz de Tenerife","Santander","Segovia","Sevilla",
-        "Soria","Tarragona","Teruel","Toledo","Valencia","Valladolid","Vitoria","Zamora","Zaragoza"]
+        "Soria","Tarragona","Teruel","Toledo","Valencia","Valladolid","Vitoria","Zamora","Zaragoza"],
 
+    "Nombre": ["Gonzalo","Beatriz","Antonio","Loubna"],
+    "Apellidos": ["Chica","Illanes","Recio","Errahaimi"],
+    "Grade": ["Graduate in","Graduate in","Graduate in","Graduate in"],
+    "Grado": ["Graduado en","Graduado en","Graduado en","Graduado en"],
+    "Titulo": ["Ing.Informática","Ing.Informática","Ing.Industrial","Ing.Telecomunicaciones"]
 }
