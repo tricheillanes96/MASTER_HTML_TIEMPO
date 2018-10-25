@@ -94,20 +94,28 @@
     </section>
     
     <!-- Ubicación Personalizada -->
-    <section id="buscaCiudad" class="ubi_personalizada-section text-center bg-light">   
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2 class="text-white mb-4">BUSCAR OTRA UBICACIÓN</h2>
-            <p class="text-white">Consulte la previsión meteorológica de otra ciudad</P>
-            <select id="selector_ciudad" size="3" class="form-control" >           
-            </select>
+  <section id="buscaCiudad" class="ubi_personalizada-section text-center bg-light">   
+            <div class="container"></div>
+            <div class="row"></div>
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-white mb-4">BUSCAR OTRA UBICACIÓN</h2>
+                <p class="text-white">Consulte la previsión meteorológica de otra ciudad</P>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ciudades
+                    </button>
+                    <div class="dropdown-menu col-lg-8 mx-auto f" aria-labelledby="dropdownMenuButton">
+                        <select id="selector_ciudad" size="3" class="form-control fondo dropdown-item" >           
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+        </section>  
            <div id="ubic_personalizada" class="iframe_closed">   
             <iframe id="ubicacion_seleccionada" frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts"></iframe>
            </div>		  
-        </div>
-      </div> 
-    </section>
+      
 
     <!-- Alumnos Sección -->
     <section id="alu" class="alu-section bg-black">
