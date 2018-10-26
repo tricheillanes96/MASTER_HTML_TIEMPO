@@ -74,7 +74,7 @@
                 <div class="col-lg-8 mx-auto">
                 <!-- ALERTA -->
                 <div class="alert alert-secondary alert-dismissible fade show sticky-buttom" role="alert">
-                <strong>Atención!</strong> No guardamos tu ubicación.
+                <strong>¡Información!</strong> Esta página no almacena tu ubicación, no usamos Cookies.
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -94,12 +94,15 @@
     </section>
     
     <!-- Ubicación Personalizada -->
-  <section id="buscaCiudad" class="ubi_personalizada-section text-center bg-light">   
-            <div class="container"></div>
-            <div class="row"></div>
+  <section id="buscaCiudad" class="ubi_personalizada-section text-center bg-light"> 
+     
+      <div class="container">
+         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <h2 class="text-white mb-4">BUSCAR OTRA UBICACIÓN</h2>
-                <p class="text-white">Consulte la previsión meteorológica de otra ciudad</P>
+                <p class="text-white">Consulte la previsión meteorológica de otra ciudad</p>
+                
+                <!-- Selector -->
                 <div class="dropdown">
                     <button class="btn btn-light dropdown-toggle  " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Ciudades
@@ -109,12 +112,15 @@
                         </select>
                     </div>
                 </div>
+                <!-- Selector -->        
             </div>
-
-        </section>  
-           <div id="ubic_personalizada" class="iframe_closed">   
-            <iframe id="ubicacion_seleccionada" frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts"></iframe>
-           </div>		  
+            <div id="ubic_personalizada" class="iframe_closed">   
+                    <iframe id="ubicacion_seleccionada" frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts"></iframe>
+            </div>
+        </div>
+      </div>
+   </section>  
+           		  
       
 
     <!-- Alumnos Sección -->
@@ -174,7 +180,7 @@
         var data_json = $.get("datos.json", function(data) {
         	var IDcity = data.city_ID;
         	var nombre = data.city_NAME;
-        	for(var i=0; i<=IDcity.length; i++)
+        	for(var i=0; i<IDcity.length; i++)
         	{
                     $("#selector_ciudad").append("<option value=\"" + IDcity[i] + "\">"+ nombre[i] + "</option>");	
         	}
