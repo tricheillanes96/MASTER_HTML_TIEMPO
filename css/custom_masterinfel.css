@@ -32,6 +32,9 @@
     border-color: white;
     border-width: 5px;
 }
+.masthead{
+    background-attachment: fixed;
+}
 .contact{
     margin-top: 100px;
 }
@@ -70,6 +73,8 @@
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  background-attachment: fixed;
+
 }
 
 .ubi_personalizada-section .form-inline input {
